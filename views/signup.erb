@@ -1,0 +1,17 @@
+<%= "<p class=\"error\">#{@error}</p>" unless @error.nil? %>
+
+<form method="post" action="/signup" class="form-group">
+  <div class="form-group">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+  </div>
+  
+  <input type="submit" value="Sign Up" class="button">
+</form>
+
+<p>Already have an account? <a href="/login">Login</a></p>

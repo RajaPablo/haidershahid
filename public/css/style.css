@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .stats {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px 0;
+  }
+  
+  .session-stats {
+    float: right;
+    width: 200px;
+    padding: 15px;
+  }
+  

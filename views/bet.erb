@@ -1,0 +1,33 @@
+<%= "<p class=\"result\">#{@result}</p>" unless @result.nil? %>
+
+<div class="session-stats">
+  <h3>Current Session</h3>
+  <p>total win: <%= session[:total_win] %></p>
+  <p>total loss: <%= session[:total_loss] %></p>
+  <p>total profit: <%= session[:total_profit] %></p>
+</div>
+
+<form method="post" action="/bet" class="form-group">
+  <div class="form-group">
+    <label>Place your bet on dice number (1 to 6)</label>
+    <input type="number" name="on" min="1" max="6" required>
+  </div>
+  
+  <div class="form-group">
+    <label>Bet amount ($):</label>
+    <input type="number" name="bet_money" min="1" required>
+  </div>
+  
+  <input type="submit" value="Place Bet" class="button">
+</form>
+
+<div class="stats">
+  <h3>Account Statistics</h3>
+  <p>total win: <%= @user.total_win %></p>
+  <p>total loss: <%= @user.total_loss %></p>
+  <p>total profit: <%= @user.total_profit %></p>
+</div>
+
+<form method="get" action="/logout">
+  <input type="submit" value="Logout" class="button">
+</form>
